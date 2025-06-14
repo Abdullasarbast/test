@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="start-screen">
+      <h1>Snake Game</h1>
+      <button id="start-button">Start Game</button>
+    </div>
+
+    <div id="game-screen" class="hidden">
+      <div class="top-bar">
+        <div class="score-container">
+          <img src="img/apple.png" alt="Score" />
+          <span id="score">0</span>
+        </div>
+        <div class="highscore-container">
+          <img src="img/trophy.png" alt="High Score" />
+          <span id="highscore">0</span>
+        </div>
+        <div class="sound-container">
+          <img id="sound-btn" src="img/volume-on.png" alt="Sound" />
+        </div>
+      </div>
+      <div class="game-container">
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        <div id="gameOver" class="hidden">
+          <h2>Game Over</h2>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
